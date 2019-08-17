@@ -27,7 +27,7 @@ customElements.define(
 
     async getEndpoints() {
       let response = await fetch(
-        `https://raw.githubusercontent.com/brettneese/oembed-component/master/src/endpoints-regexp.json`
+        `https://brettneese.github.io/oembed-webcomponent/endpoints.json`
       );
       let json = await response.json();
 
