@@ -37,9 +37,6 @@ customElements.define(
     // https://github.com/thangman22/oembed-component
     async getOembedEndpoint(url) {
       let endpoints = await this.getEndpoints();
-
-      console.log(endpoints);
-
       let r = Object.keys(endpoints).filter(endpoint => {
         let foundPattern = endpoints[endpoint].filter(pattern =>
           new RegExp(pattern).test(url)
